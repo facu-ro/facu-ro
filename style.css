@@ -1,11 +1,20 @@
 
+.caja_ancho{
+
+    width: 80%;
+
+    margin: auto;
+}
+
+
+
 header{
     
     overflow: hidden;
 
     background-color: aqua;
     text-align: center;
-    width: 80%;
+    /*width: 80%;*/
     margin: auto;
 }
 
@@ -13,6 +22,7 @@ header>img{
     float: left;
     
 }
+
 .logo1{
     margin-top: 10px;
     margin-left: 10px;
@@ -23,6 +33,7 @@ header>img{
     display: none;
 }
 
+
 header>h1{
     
     text-align: center;
@@ -32,24 +43,35 @@ header>h1{
 }
 
 nav{
-    width: 80%;
-    margin: auto;
+   /* width: 80%;*/
+    margin: 5px auto;
+   /* background-color: rosybrown;*/
     
 }
 
 nav>ul{
 
+    /*
     display: flex;
     justify-content: center;
-    
+    */
 
+    text-align: center;
+    
+    /*background-color: blue;*/
+    margin: auto;
+    overflow: hidden;
 }
 
 nav>ul>li{
 
+    display: inline-block;
     list-style: none;
     margin:0 3px;
     background-color: yellow;
+   /* margin: auto;*/
+   text-align: center;
+  
 }
 
 nav>ul>li:hover{
@@ -72,14 +94,14 @@ nav>ul>li>a{
 .caja{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
 }
 .principal{
 
     background-color:burlywood;
     float: left;
 
-    width: 60%;
+    width: 70%;
 
     display: flex;
     flex-direction: column;
@@ -90,7 +112,7 @@ nav>ul>li>a{
     text-align: center;
     width: 60%;
     
-    margin-bottom: 20px;
+    margin-bottom: 10%;
 }
 
 .foto2{
@@ -133,8 +155,9 @@ aside{
     width: 20%;
     text-align: center;
     background-color:darkgrey;
-    height: 300px;
+    height: 20%;
     margin-left: 4px;
+    overflow-y: scroll;
 }
 
 aside>p{
@@ -145,13 +168,22 @@ footer{
     background-color: coral;
     clear: both;
     text-align: center;
-    width: 80%;
+    /*width: 80%;*/
     margin: auto;
     font-weight: bold;
 }
 
+.principal>figure{
+    text-align: center;
+}
 
-@media screen and (max-width:800px){
+
+.fotoapp{
+    width: 70%;
+    text-align: center;
+}
+
+@media screen and (max-width:1200px){
 
     .logo1{
         display: none;
@@ -161,14 +193,27 @@ footer{
 
     }
 
-    header>h1
-
-    nav>ul{
-       
-        
-    }
-    nav>ul>li>a{
-        font-size:1em;
+    header>h1{
+        font-size: 25px;
     }
     
+    nav{
+
+    }
+
+    nav>ul{
+               
+    }
+    nav>ul>li>a{
+        font-size:.8em;
+    }
+    
+
+    .foto1{
+        display: none;
+    }
+
+    .foto2{
+        display: block;
+    }
 }
