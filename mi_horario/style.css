@@ -1,0 +1,39 @@
+
+header{
+
+    background-color: burlywood;
+    border:solid 2px maroon;
+
+    margin-bottom: 10px;
+}
+
+.todo{
+
+    width: 90%;
+
+    margin: auto;
+
+    background-color: bisque;
+}
+
+header> div.container-fluid> div.row> div:nth-child(1){
+
+    
+
+   
+}
+
+header> div.container-fluid> div.row> div:nth-child(2){
+
+    
+   text-align: center;
+    
+}
+
+figure{
+    
+    margin: 10px;
+    
+    
+    
+}
